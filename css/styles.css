@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Light.eot');
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.ttf') format('truetype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Light.svg#SFProDisplay-Light') format('svg');
+}
+
+body{
+    font-family: "SF Pro Display", sans-serif;
+    margin:0px;
+    padding:0px;
+    font-size: large;
+}
+
+
+
+header {
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    text-align: center;
+    height: 100px;
+    border-bottom: 1px solid black;
+    background: red;
+}
+
+header img {
+    height: calc(100% - 30px);
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav{
+    height: 2rem;
+    background: red;
+    color: aliceblue;
+    list-style-type: none;
+    
+    display:flex;
+    align-items: center;
+}
+
+nav span a{
+    height: inherit;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    background: orange;    
+    box-shadow: 0 0 400px 30px orange;
+}
+
+
+
+#contenu {
+    border-left: 1px solid black;
+    width: 70%;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;
+    border-right: 1px solid black;
+
+}
