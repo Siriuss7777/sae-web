@@ -35,6 +35,11 @@ body{
     border-right: 1px solid black;
 }
 
+a:hover{
+    color: aliceblue;
+    transition: 300ms;
+}
+
 header {
     color: black;
     padding:0 1rem;
@@ -62,8 +67,14 @@ header a {
     color: black;
 }
 
+header a:hover{
+    color: aliceblue;
+}
 
-nav{ 
+
+#navbar{ 
+    position: sticky;
+    top: 0px; 
     height: 2.5rem;
     font-size: 1.1em;
     background: var(--header-color);
@@ -75,7 +86,7 @@ nav{
     
 }
 
-nav a{
+#navbar a{
     height: inherit;
     text-decoration: none;
     color: black;
@@ -83,7 +94,6 @@ nav a{
     justify-content: center;
     align-items: center;
 }
-
 
 main{
     display: flex;
