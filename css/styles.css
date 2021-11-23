@@ -13,70 +13,91 @@
         url('../fonts/webfontkit-sf/SFProDisplay-Light.svg#SFProDisplay-Light') format('svg');
 }
 
-body{
-    font-family: "SF Pro Display", sans-serif;
-    margin:0px;
-    padding:0px;
-    font-size: large;
+@font-face {
+    font-family: 'SF Pro Semibold';
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Semibold.eot');
+    src: url('../fonts/webfontkit-sf/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.ttf') format('truetype'),
+        url('../fonts/webfontkit-sf/SFProDisplay-Semibold.svg#SFProDisplay-Semibold') format('svg');
 }
 
+body{
+    font-family: "SF Pro Display", sans-serif;
+    font-size: large;
 
+    --header-color: rgb(255, 81, 0);
+}
+
+.border{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
 
 header {
+    color: black;
     padding:0 1rem;
-    display: flex;
     align-items: center;
-    position: sticky;
-    top:0px;
     text-align: center;
-    height: 100px;
+
+    --height: 100px;
+    height: var(--height);
     border-bottom: 1px solid black;
-    background: red;
+    background: var(--header-color);
+    
+    
+    
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 header img {
-    height: calc(100% - 30px);
-    padding: 10px;
+    height: calc(var(--height) - 10px);
 }
 
 header a {
+    font-size: 1.5em;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
-nav{
-    height: 2rem;
-    background: red;
+nav{ 
+    height: 2.5rem;
+    font-size: 1.1em;
+    background: var(--header-color);
     color: aliceblue;
     list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     
-    display:flex;
-    align-items: center;
 }
 
-nav span a{
+nav a{
     height: inherit;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 main{
     display: flex;
     justify-content: center;
-    background: orange;    
-    box-shadow: 0 0 400px 30px orange;
+    background: orange;
 }
 
 
 
 #contenu {
     border-left: 1px solid black;
-    width: 70%;
+    width: 75%;
     height: 100vh;
     align-items: center;
     background-color: aliceblue;
     border-right: 1px solid black;
-
 }
