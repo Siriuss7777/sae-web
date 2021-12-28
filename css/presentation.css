@@ -1,4 +1,15 @@
 main{
-    padding: 0px 10rem;
     color: black;
 }
+
+#content{
+    margin: 0.5em 3em;
+}
+
+#content h1{
+    text-align: center;
+}
+
+/* #content h3 ~ p{
+    margin-left: 0.5em;
+} */

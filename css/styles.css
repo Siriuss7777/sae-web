@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 a:hover{
     color: black;
     transition: 300ms;
@@ -29,6 +24,13 @@ a:hover{
 }
 
 body{
+    margin:0;
+    padding:0;
+    
+    background: url(../images/iut.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
     font-family: "SF Pro Display", sans-serif;
     font-size: large;
     color: var(--text-color);
@@ -53,8 +55,6 @@ header {
     height: var(--height);
     border-bottom: 1px solid black;
     background: var(--header-color);
-    
-    
     
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -82,7 +82,6 @@ nav{
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
 }
 
 nav a{
@@ -93,7 +92,33 @@ nav a{
     justify-content: center;
     align-items: center;
 }
- 
 main{
-    padding: 0 10rem;
+    background: aliceblue;
+    background-clip: content-box;
+    padding: 10px 15vw;
+}
+
+main h1{
+    text-align: center;
+    font-size: 2.1em;
+}
+
+
+main h2{
+    font-size: 1.7em;
+}
+
+main h3 {
+    font-size: 1.4em;
+}
+
+main p{
+    font-size: 1.1em;
+}
+
+main blockquote{
+    font-size: 1.1em;
+    margin-left: 0.2em;
+    padding-left: 0.6em;
+    border-left: black 3px solid;
 }
