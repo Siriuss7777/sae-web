@@ -1,5 +1,6 @@
 main{
     color: black;
+    --highlight-color: #e3541a;
 }
 
 #content{
