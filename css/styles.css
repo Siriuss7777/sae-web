@@ -1,3 +1,13 @@
+::selection{
+    color: white;
+    background: var(--highlight-color); 
+}
+
+::-moz-selection{
+    color: white;
+    background: orange;
+}
+
 a:hover{
     color: black;
     transition: 300ms;
@@ -37,6 +47,7 @@ body{
 
     --header-color: rgb(61, 61, 61);
     --text-color: aliceblue;
+    --highlight-color: #e3541a;
 
     --width-input: 250px;
     --width-textarea: 450px;
@@ -293,3 +304,10 @@ footer p{
     opacity: 0.4;
 }
 
+#content{
+    margin: 0.5rem 3rem 5rem 3rem;
+}
+
+#content h1{
+    text-align: center;
+}
