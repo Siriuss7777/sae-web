@@ -1,13 +1,3 @@
-::selection{
-    color: white;
-    background: var(--highlight-color); 
-}
-
-::-moz-selection{
-    color: white;
-    background: orange;
-}
-
 a:hover{
     color: black;
     transition: 300ms;
@@ -47,8 +37,9 @@ body{
 
     --header-color: rgb(61, 61, 61);
     --text-color: aliceblue;
-    --highlight-color: #e3541a;
 
+    --width-input: 250px;
+    --width-textarea: 450px;
 }
 
 .border{
@@ -103,6 +94,7 @@ nav a{
     justify-content: center;
     align-items: center;
 }
+
 main{
     background: aliceblue;
     background-clip: content-box;
@@ -113,7 +105,6 @@ main h1{
     text-align: center;
     font-size: 2.1em;
 }
-
 
 main h2{
     font-size: 1.7em;
@@ -132,4 +123,140 @@ main blockquote{
     margin-left: 0.2em;
     padding-left: 0.6em;
     border-left: black 3px solid;
+}
+
+input{
+    font-size: 0.9em;
+    font-family: "SF Pro Display", sans-serif;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+    padding: 5px;
+    width: var(--width-input);
+}
+
+textarea{
+    font-size: 0.9em;
+    font-family: "SF Pro Display", sans-serif;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+    padding: 5px;
+    width: var(--width-textarea);
+}
+
+.button{
+    cursor: pointer;
+    width: 115px;
+}
+
+@media all and (max-width: 1024px){
+    body{
+        background: none;
+        background-color: white;
+    }
+    main{
+        padding: 10px 10vw;
+    }
+
+    main h1{
+        text-align: center;
+        font-size: 1.6em;
+    }
+    
+    main h2{
+        font-size: 1.5em;
+    }
+    
+    main h3 {
+        font-size: 1.2em;
+    }
+    
+    main p,label{
+        font-size: 0.9em;
+    }
+    
+    main details summary{
+        font-size: 1.1em;
+        margin: 15px;
+    }
+
+    main #content{
+        margin: 0.5em 1.5em;
+    }
+
+    header{
+        --height: 75px;
+    }
+
+    header h1{
+        font-size: 1.6em;
+    }
+
+    header a{
+        font-size: 1em;
+    }
+
+    header img{
+        --height: 75px;
+    }
+
+    nav{
+        font-size: 0.9em;
+    }
+
+    main details{
+        margin: 15px;
+    }
+}
+
+@media all and (max-width: 700px){
+    body{
+        background: none;
+        background-color: white;
+        --width-input: 170px;
+        --width-textarea: 300px;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header h1{
+        font-size: 1.2em;
+    }
+
+    header a{
+        display: none;
+    }
+
+    main h1{
+        font-size: 1.4em;
+    } 
+
+    main h2{
+        font-size: 1.3em;
+    }
+    
+    main h3 {
+        font-size: 1.2em;
+    }
+    
+    main p,label{
+        font-size: 0.9em;
+    }
+    
+    main details summary{
+        font-size: 1em;
+        margin: 15px;
+    }
+
+    input{
+        font-size: 0.8em;
+    }
+
+    textarea{
+        font-size: 0.8em;
+    }
 }
