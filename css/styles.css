@@ -125,6 +125,7 @@ main blockquote{
     border-left: black 3px solid;
 }
 
+
 input{
     font-size: 0.9em;
     font-family: "SF Pro Display", sans-serif;
@@ -260,3 +261,31 @@ textarea{
         font-size: 0.8em;
     }
 }
+
+footer{
+    background: var(--header-color);
+    
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    align-items: center;
+    height: 7vh;
+}
+
+footer #images{
+    width: 12.5vw;
+    display: flex;
+    justify-content: space-between;
+    justify-self: right;
+}
+
+footer #images img{
+    width: 4vh;
+    height: 4vh;
+}
+
+footer p{
+    justify-self: flex-end;
+    font-size: 0.75em;
+    opacity: 0.4;
+}
+
