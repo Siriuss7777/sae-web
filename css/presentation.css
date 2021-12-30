@@ -3,12 +3,13 @@ main{
     --highlight-color: #e3541a;
 }
 
-#content{
-    margin: 0.5em 3em;
+#content a{
+    color: var(--highlight-color);
+    display: block;
 }
 
-#content h1{
-    text-align: center;
+#content a:hover{
+    color: black;
 }
 
 /* #content h3 ~ p{

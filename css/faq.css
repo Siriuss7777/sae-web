@@ -1,5 +1,6 @@
 main{
     color: black;
+    --highlight-color: #e3541a;
 }
 
 details{
@@ -14,21 +15,13 @@ summary{
 }
 
 summary:hover{
-    color: red;
+    color: var(--highlight-color);
     transition: 300ms;
 }
 
 body main section details > p{
     background-color: #FFFFFF;
     padding: 8px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     box-shadow: 3px 3px 4px black;
-}
-
-#content{
-    margin: 0.5em 3em;
-}
-
-#content h1{
-    text-align: center;
 }
