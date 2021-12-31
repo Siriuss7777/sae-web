@@ -51,6 +51,9 @@ body{
 
     --width-input: 250px;
     --width-textarea: 450px;
+
+    --width-map: 375px;
+    --height-map: 225px;
 }
 
 .border{
@@ -112,16 +115,16 @@ main{
     padding: 10px 15vw;
 }
 
-main h1{
+main h1,h2{
     text-align: center;
     font-size: 2.1em;
 }
 
-main h2{
+main h3{
     font-size: 1.7em;
 }
 
-main h3 {
+main h4{
     font-size: 1.4em;
 }
 
@@ -141,6 +144,7 @@ input{
     font-size: 0.9em;
     font-family: "SF Pro Display", sans-serif;
     margin-bottom: 15px;
+    border: 1px solid black;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 3px 3px 4px black;
     padding: 5px;
@@ -151,6 +155,7 @@ textarea{
     font-size: 0.9em;
     font-family: "SF Pro Display", sans-serif;
     margin-bottom: 15px;
+    border: 1px solid black;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 3px 3px 4px black;
     padding: 5px;
@@ -162,21 +167,29 @@ textarea{
     width: 115px;
 }
 
+iframe{
+    width: var(--width-map);
+    height: var(--height-map);
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 4px black;
+}
+
 @media all and (max-width: 1024px){
     main{
         padding: 10px 10vw;
     }
 
-    main h1{
+    main h1,h2{
         text-align: center;
         font-size: 1.6em;
     }
     
-    main h2{
+    main h3{
         font-size: 1.5em;
     }
     
-    main h3 {
+    main h4{
         font-size: 1.2em;
     }
     
@@ -233,6 +246,8 @@ textarea{
         background-color: white;
         --width-input: 170px;
         --width-textarea: 300px;
+        --width-map: 275px;
+        --height-map: 200px;
     }
 
     header{
@@ -248,15 +263,15 @@ textarea{
         display: none;
     }
 
-    main h1{
+    main h1,h2{
         font-size: 1.4em;
     } 
 
-    main h2{
+    main h3{
         font-size: 1.3em;
     }
     
-    main h3 {
+    main h4{
         font-size: 1.2em;
     }
     
