@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
         <link rel="stylesheet" type="text/css" href="../css/faq.css">
-        <title>Questionnaire BUT</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/logo_onglet.png">
+        <title>IUT Lyon 1 - Questionnaire BUT</title>
     </head>
     <body>
         <header>
@@ -85,16 +86,16 @@
                 </details>
                 <p>
                     Si nous n'avons pas répondu à toutes vos questions, nous vous invitons à répondre au formulaire ci-dessous 
-                    en indiquant votre nom, votre prénom, votre email puis la question à laquelle vous souhaitez avoir un réponse.
+                    en indiquant votre nom, votre prénom, votre email puis la question à laquelle vous souhaitez avoir une réponse.
                 </p>
-                <form action="" method="post">
+                <form action="envoie_serveur.php" method="post">
                     <div>
                         <label for="nom">Nom :</label><br/>
                         <input type="text" name="name" id="nom" placeholder="Entrez ici votre nom." required>
                     </div>
                     <div>
                         <label for="prenom">Prénom :</label><br/>
-                        <input type="text" name="name" id="prenom" placeholder="Entrez ici votre prénom." required>
+                        <input type="text" name="surname" id="prenom" placeholder="Entrez ici votre prénom." required>
                     </div>
                     <div>
                         <label for="email">E-mail :</label><br/>
@@ -108,7 +109,7 @@
                         <input type="submit" value="Envoyer" class="button">
                     </div>
                   </form>
-                </section>
+            </section>
         </main>
         <footer>
             <div id="images">
