@@ -110,14 +110,23 @@ nav a{
 }
 
 main{
+    color: black;
     background: aliceblue;
     background-clip: content-box;
     padding: 10px 15vw;
 }
 
-main h1,h2{
+main h1{
     text-align: center;
     font-size: 2.1em;
+}
+
+main h2{
+    font-size: 2.1em;
+}
+
+main h2.main_desc{
+    font-size: 1.7em;
 }
 
 main h3{
@@ -136,9 +145,23 @@ main blockquote{
     font-size: 1.1em;
     margin-left: 0.2em;
     padding-left: 0.6em;
+    color: black;
     border-left: black 3px solid;
 }
 
+article{
+    margin: 0;
+    border-bottom: 2px solid lightgray;
+    text-align: left;
+}
+
+article p.article_head a{
+    color: var(--highlight-color);
+}
+
+article p{
+    color: gray;
+}
 
 input{
     font-size: 0.9em;
