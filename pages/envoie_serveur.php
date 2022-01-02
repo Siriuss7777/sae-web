@@ -23,7 +23,7 @@
                 <h2>Envoi réussi !</h2>
                 <p>
                     Bonjour <?php echo ($_POST['surname']); echo (' '); echo ($_POST['name']); ?>,<br/><br/>
-                    l'envoie du formulaire a été effectué avec succès, la question que vous avez posée est la suivante :<br/><br/>
+                    l'envoi du formulaire a été effectué avec succès, la question que vous avez posée est la suivante :<br/><br/>
                     <?php echo ($_POST['question']);?><br/><br/>
                     Une réponse vous sera envoyée dans un délai de 48h à l'adresse mail suivante :<br/><br/>
                     <?php echo ($_POST['email']);?><br/><br/>
