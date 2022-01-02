@@ -13,6 +13,14 @@ a:hover{
     transition: 300ms;
 }
 
+main a:hover{
+    color: black;
+    transition: 300ms;
+    border-radius: 25px 25px 25px 25px;
+    border-left: 5px solid black;
+    padding: 4px;
+}
+
 @font-face {
     font-family: 'SF Pro Display';
     src: url('../fonts/webfontkit-sf/SFProDisplay-Light.eot');
@@ -175,6 +183,12 @@ input{
     width: var(--width-input);
 }
 
+input:focus{
+    outline: none;
+    animation: 0.75s focus;
+    padding: 10px;
+}
+
 textarea{
     font-size: 0.9em;
     font-family: "SF Pro Display", sans-serif;
@@ -184,6 +198,12 @@ textarea{
     box-shadow: 3px 3px 4px black;
     padding: 5px;
     width: var(--width-textarea);
+}
+
+textarea:focus{
+    outline: none;
+    animation: 0.75s focus;
+    padding: 10px;
 }
 
 .button{
@@ -197,6 +217,17 @@ textarea{
     border-radius: 5px 5px 5px 5px;
     box-shadow: 3px 3px 4px black;
     padding: 5px;
+}
+
+.button:hover{
+    background-color: white;
+    animation: 0.75s button;
+    padding: 10px;
+    width: 135px;
+}
+
+.button:active{
+    color: var(--highlight-color);
 }
 
 p.button a{
@@ -378,4 +409,24 @@ footer p{
 
 #content h1{
     text-align: center;
+}
+
+@keyframes focus{
+    from{
+        padding: 5px;
+    }
+    to{
+        padding: 10px;
+    }
+}
+
+@keyframes button{
+    from{
+        padding: 5px;
+        width: 115px;
+    }
+    to{
+        padding: 10px;
+        width: 135px;
+    }
 }
