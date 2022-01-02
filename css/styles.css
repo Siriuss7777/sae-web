@@ -14,11 +14,8 @@ a:hover{
 }
 
 main a:hover{
-    color: black;
-    transition: 300ms;
-    border-radius: 25px 25px 25px 25px;
-    border-left: 5px solid black;
-    padding: 4px;
+    animation: 0.8s link;
+    font-size: var(--animation-link-max);
 }
 
 @font-face {
@@ -62,6 +59,9 @@ body{
 
     --width-map: 375px;
     --height-map: 225px;
+
+    --animation-link-mini: 1.1em;
+    --animation-link-max: 1.15em;
 }
 
 .border{
@@ -245,6 +245,11 @@ iframe{
 }
 
 @media all and (max-width: 1024px){
+    body{
+        --animation-link-mini: 0.9em;
+        --animation-link-max: 1em;
+    }
+
     main{
         padding: 10px 10vw;
     }
@@ -361,6 +366,10 @@ iframe{
         margin: 15px;
     }
 
+    main a:hover{
+        animation: none;
+    }
+
     input{
         font-size: 0.8em;
     }
@@ -428,5 +437,14 @@ footer p{
     to{
         padding: 10px;
         width: 135px;
+    }
+}
+
+@keyframes link{
+    from{
+        font-size: var(--animation-link-mini);
+    }
+    to{
+        font-size: var(--animation-link-max);
     }
 }
