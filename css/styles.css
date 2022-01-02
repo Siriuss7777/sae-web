@@ -124,9 +124,11 @@ main h1{
 
 main h2{
     font-size: 2.1em;
+    text-align: center;
 }
 
 main h2.main_desc{
+    text-align: left;
     font-size: 1.7em;
 }
 
@@ -150,17 +152,15 @@ main blockquote{
     border-left: black 3px solid;
 }
 
-article{
-    margin: 0;
-    border-bottom: 2px solid lightgray;
-    text-align: left;
+hr{
+    border: 1px solid lightgray;
 }
 
-article p.article_head a{
+a{
     color: var(--highlight-color);
 }
 
-article p{
+.description_article{
     color: gray;
 }
 
@@ -221,6 +221,10 @@ iframe{
     main h1,h2{
         text-align: center;
         font-size: 1.6em;
+    }
+
+    main h2.main_desc{
+        font-size: 1.55em;
     }
     
     main h3{
@@ -303,7 +307,11 @@ iframe{
 
     main h1,h2{
         font-size: 1.4em;
-    } 
+    }
+
+    main h2.main_desc{
+        font-size: 1.35em;
+    }
 
     main h3{
         font-size: 1.3em;
